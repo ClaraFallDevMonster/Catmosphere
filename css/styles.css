@@ -5,3 +5,15 @@
   background-size: cover;
   color: white;
 }
+
+.navbar-brand {
+  font-size: 2rem;
+}
+
+.nav-link {
+  font-size: 1.7rem;
+}
+
+#navbarTogglerDemo02 {
+  background: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.7));
+}
