@@ -3,6 +3,7 @@ html, body {
 }
 
 h1 {
+  margin-bottom: 4rem;
   font-family: 'Pacifico', cursive;
   font-size: 5rem;
   line-height: 1.5;
@@ -43,8 +44,16 @@ h1 {
   color: #fdfdfd;
 }
 
+.btn-dark:hover {
+  background: grey;
+}
+
+.btn-group-lg>.btn, .btn-lg {
+  font-size: 1.5rem;
+}
+
 .container-fluid {
-  padding: 3% 15%;
+  padding: 6% 15%;
 }
 
 .nav-link:hover {
