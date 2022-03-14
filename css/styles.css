@@ -4,6 +4,8 @@ html, body {
 
 h1 {
   font-family: 'Pacifico', cursive;
+  font-size: 5rem;
+  line-height: 1.5;
 }
 
 .navpic {
@@ -11,7 +13,7 @@ h1 {
 }
 
 .navbar-brand {
-  magin: 0!important;
+  margin: 0!important;
   padding: 0!important;
 }
 
@@ -29,10 +31,6 @@ h1 {
   color: white;
 }
 
-#navbarTogglerDemo02 {
-background: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.8));
-}
-
 .nav-link {
   font-size: 1.7rem;
   color: #dddddd!important;
@@ -42,4 +40,12 @@ background: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.8));
 
 .nav-link:hover {
   color: white!important;
+}
+
+@media screen and (max-width: 990px) {
+
+  #navbarTogglerDemo02 {
+  background: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.8));
+  }
+
 }
