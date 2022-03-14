@@ -5,7 +5,8 @@ html, body {
 h1 {
   margin-bottom: 4rem;
   font-family: 'Pacifico', cursive;
-  font-size: 5rem;
+  font-size: 5.5rem;
+
   line-height: 1.5;
 }
 
@@ -20,7 +21,7 @@ h1 {
 
 .navbar {
   padding: 0;
-  height: 100px;
+  height: 90px;
   background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
 }
 
@@ -28,7 +29,12 @@ h1 {
   font-size: 1.7rem;
   color: #dddddd !important;
   padding-right: 10px !important;
+  padding-left: 36px !important;
   text-align: right;
+}
+
+.nav-link:hover {
+  color: white !important;
 }
 
 .navbar-toggler {
@@ -41,24 +47,36 @@ h1 {
   background: url(../images/background.png);
   background-position: center center;
   background-size: cover;
-  color: #fdfdfd;
-}
-
-.btn-dark:hover {
-  background: grey;
-}
-
-.btn-group-lg>.btn, .btn-lg {
-  font-size: 1.5rem;
+  color: #fdfdfd
 }
 
 .container-fluid {
-  padding: 6% 15%;
+  padding: 3% 15%;
+  margin-top: 3rem;
 }
 
-.nav-link:hover {
-  color: white !important;
+
+.btn-dark:hover {
+  background: #636363;
 }
+
+.download-button {
+  margin: 0 4% 0 0;
+  font-size: 1.5rem;
+}
+
+.title-img {
+  width: 60%;
+  transform: rotate(21deg);
+  z-index: 1;
+}
+
+#features {
+  z-index: 10;
+  position: relative;
+  background: white;
+}
+
 
 @media screen and (max-width: 990px) {
   #navbarTogglerDemo02 {
