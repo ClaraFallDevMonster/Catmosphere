@@ -23,6 +23,17 @@ h1 {
   background: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.8));
 }
 
+.nav-link {
+  font-size: 1.7rem;
+  color: #dddddd!important;
+  padding-right: 10px!important;
+  text-align: right;
+}
+
+.navbar-toggler {
+  margin: 10px!important;
+}
+
 #title {
   height: 100vh;
   background: url(../images/background.png);
@@ -31,16 +42,20 @@ h1 {
   color: white;
 }
 
-.nav-link {
-  font-size: 1.7rem;
-  color: #dddddd!important;
-  padding-right: 10px!important;
-  text-align: right;
+.row {
+  --bs-gutter-x: 0;
 }
 
 .nav-link:hover {
   color: white!important;
 }
+
+.col-lg-6 {
+  padding: 0;
+}
+
+
+
 
 @media screen and (max-width: 990px) {
 
