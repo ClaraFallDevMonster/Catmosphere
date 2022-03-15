@@ -117,9 +117,32 @@ p {
 }
 
 #testimonials {
-  padding: 7% 15% 0;
   text-align: center;
   color: white;
+}
+
+.carousel-item {
+    padding: 7% 15% 0;
+}
+
+.carousel-control-prev {
+  padding-top: 250px;
+}
+
+.carousel-control-next {
+  padding-top: 250px;
+}
+
+.carousel-control-prev-icon {
+    background-image: url(../images/previous.png);
+    height: 40px;
+    width: 40px;
+}
+
+.carousel-control-next-icon {
+    background-image: url(../images/next.png);
+    height: 40px;
+    width: 40px;
 }
 
 .testimonial-img {
@@ -133,6 +156,7 @@ p {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
+  height: 90vh;
 }
 
 #press {
@@ -145,8 +169,7 @@ p {
   margin: 5% 2% 1%;
 }
 
-@media screen and (max-width: 768px) {
-
+@media screen and (max-width: 1200px) {
 
 
   #navbarTogglerDemo02 {
@@ -183,7 +206,7 @@ p {
   }
 
   h2 {
-    font-size: 1.4rem;
+    font-size: 2.5rem;
     margin-bottom: 20px;
   }
 
@@ -215,9 +238,12 @@ p {
   }
 
   .testimonial-img {
-    width: 25%;
+    width: 20%;
   }
 
+.testandpress {
+  height: 80vh;
+}
 
 }
 
@@ -290,4 +316,17 @@ p {
     width: 25%;
     margin: 17px;
   }
+
+  .carousel-control-prev {
+    padding-top: 150px;
+  }
+
+  .carousel-control-next {
+    padding-top: 150px;
+  }
+
+  .testandpress {
+    height: 48vh;
+  }
+
 }
