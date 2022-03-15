@@ -129,6 +129,7 @@ p {
   background-image: url(../images/background3.png);
   background-position: center center;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 #press {
