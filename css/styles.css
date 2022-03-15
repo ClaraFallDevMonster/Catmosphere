@@ -10,10 +10,22 @@ h1 {
   line-height: 1.5;
 }
 
+h2 {
+  font-family: 'Pacifico', cursive;
+  font-weight: lighter;
+  font-size: 3.1rem;
+  line-height: 1.5;
+  margin: 30px;
+}
+
 h3 {
   font-family: 'Pacifico', cursive;
   font-size: 2.2rem;
   margin-bottom: 20px;
+}
+
+em {
+  font-size: 1.5rem;
 }
 
 p {
@@ -96,14 +108,40 @@ p {
 
 .featuresimg {
   height: 80px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .featuresimg:hover {
   opacity: 0.6;
 }
 
+#testimonials {
+  padding: 7% 15% 0;
+  text-align: center;
+  color: white;
+}
 
+.testimonial-img {
+  width: 15%;
+  border-radius: 100%;
+  margin: 20px;
+}
+
+.testandpress {
+  background-image: url(../images/background3.png);
+  background-position: center center;
+  background-size: cover;
+}
+
+#press {
+  padding-bottom: 3%;
+  text-align: center;
+}
+
+.press-img {
+  width: 11%;
+  margin: 5% 2% 2%;
+}
 
 @media screen and (max-width: 990px) {
   #navbarTogglerDemo02 {
