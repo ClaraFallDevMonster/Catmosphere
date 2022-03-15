@@ -33,7 +33,7 @@ p {
 }
 
 .navpic {
-  padding: 15px 0 0 15px;
+  padding: 6% 0 6% 5%;
 }
 
 .navbar-brand {
@@ -126,7 +126,7 @@ p {
 }
 
 .testandpress {
-  background-image: url(../images/background3.png);
+  background-image: url(../images/background-test.png);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -151,12 +151,12 @@ p {
   }
 
   .navbar {
-    height: 75px;
+    height: 70px;
   }
 
   .navpic {
     width: 175px;
-    height: 65px;
+    height: 70px;
   }
 
   .download-button {
@@ -221,12 +221,12 @@ p {
 @media screen and (max-width: 564px) {
 
 .navbar {
-  height: 75px;
+  height: 70px;
 }
 
 .navpic {
   width: 175px;
-  height: 65px;
+  height: 70px;
 }
 
 .download-button {
@@ -258,7 +258,7 @@ p {
   }
 
   em {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 
   .title-img {
@@ -271,6 +271,13 @@ p {
     margin-bottom: 20px;
   }
 
+  .testandpress {
+    background-image: url(../images/background-mobile.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
   #press {
     padding-bottom: 5%;
     text-align: center;
@@ -278,5 +285,6 @@ p {
 
   .testimonial-img {
     width: 25%;
+    margin: 17px;
   }
 }
