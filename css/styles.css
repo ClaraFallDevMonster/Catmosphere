@@ -132,13 +132,13 @@ p {
 }
 
 #press {
-  padding-bottom: 3%;
+  padding-bottom: 2%;
   text-align: center;
 }
 
 .press-img {
   width: 11%;
-  margin: 5% 2% 2%;
+  margin: 5% 2% 1%;
 }
 
 @media screen and (max-width: 768px) {
@@ -157,7 +157,7 @@ p {
   }
 }
 
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 564px) {
 
   h1 {
     font-size: 3rem;
