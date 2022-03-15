@@ -10,6 +10,17 @@ h1 {
   line-height: 1.5;
 }
 
+h3 {
+  font-family: 'Pacifico', cursive;
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+}
+
+p {
+  color: #8f8f8f;
+  font-size: 1.6rem;
+}
+
 .navpic {
   padding: 15px 0 0 15px;
 }
@@ -75,7 +86,23 @@ h1 {
   z-index: 10;
   position: relative;
   background: white;
+  padding: 7% 15%;
 }
+
+.feature-box {
+  text-align: center;
+  padding: 4%;
+}
+
+.featuresimg {
+  height: 80px;
+  margin-bottom: 15px;
+}
+
+.featuresimg:hover {
+  opacity: 0.6;
+}
+
 
 
 @media screen and (max-width: 990px) {
