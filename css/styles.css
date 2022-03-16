@@ -204,6 +204,13 @@ p {
 
 .card-body .btn {
   font-size: 1.5rem;
+  margin: 35px 0 20px;
+  width: 60%;
+  height: 50px;
+}
+
+.card-body p {
+  margin: 0;
 }
 
 .card {
@@ -441,7 +448,16 @@ p {
   }
 
 .card-body h2 {
-  margin-top: 5px;
+  margin: 10px;
 }
+
+.card-body .btn {
+  margin: 20px 0 10px;
+  width: 60%;
+  height: 40px;
+  font-size: 1rem;
+}
+
+
 
 }
