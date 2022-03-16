@@ -122,27 +122,27 @@ p {
 }
 
 .carousel-item {
-    padding: 7% 15% 0;
+    padding: 15% 15% 0;
 }
 
 .carousel-control-prev {
-  padding-top: 250px;
+  padding-top: 290px;
 }
 
 .carousel-control-next {
-  padding-top: 250px;
+  padding-top: 290px;
 }
 
 .carousel-control-prev-icon {
     background-image: url(../images/previous.png);
-    height: 40px;
-    width: 40px;
+    height: 30px;
+    width: 30px;
 }
 
 .carousel-control-next-icon {
     background-image: url(../images/next.png);
-    height: 40px;
-    width: 40px;
+    height: 30px;
+    width: 30px;
 }
 
 .testimonial-img {
@@ -151,12 +151,17 @@ p {
   margin: 20px;
 }
 
+.testimonial-text {
+  line-height: 1.8em;
+    height: 5.4em;       /* height is 2x line-height, so two lines will display */
+    overflow: hidden;  /* prevents extra lines from being visible */
+}
+
 .testandpress {
   background-image: url(../images/background-test.png);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 90vh;
 }
 
 #press {
@@ -241,11 +246,35 @@ p {
     width: 20%;
   }
 
-.testandpress {
-  height: 80vh;
-}
+  .testimonial-text {
+    line-height: 1.8em;
+      height: 5.4em;       /* height is 2x line-height, so two lines will display */
+      overflow: hidden;  /* prevents extra lines from being visible */
+  }
+
+  .carousel-control-prev {
+    padding-top: 250px;
+  }
+
+  .carousel-control-next {
+    padding-top: 250px;
+  }
+
+  .testandpress {
+    background-image: url(../images/background1200.png);
 
 }
+
+@media screen and (max-width: 768px) {
+
+  .testimonial-text {
+    line-height: 1.8em;
+      height: 9em;       /* height is 2x line-height, so two lines will display */
+      overflow: hidden;  /* prevents extra lines from being visible */
+  }
+
+}
+
 
 @media screen and (max-width: 564px) {
 
@@ -318,15 +347,18 @@ p {
   }
 
   .carousel-control-prev {
-    padding-top: 150px;
+    padding-top: 120px;
   }
 
   .carousel-control-next {
-    padding-top: 150px;
+    padding-top: 120px;
   }
 
-  .testandpress {
-    height: 48vh;
+  .testimonial-text {
+    line-height: 1.8em;
+      height: 7.2em;       /* height is 2x line-height, so two lines will display */
+      overflow: hidden;  /* prevents extra lines from being visible */
   }
+
 
 }
