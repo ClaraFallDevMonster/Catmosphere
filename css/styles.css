@@ -180,7 +180,7 @@ p {
 
 .h2pricing {
     padding: 3% 15%;
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 .pricing-col {
@@ -198,8 +198,8 @@ p {
 }
 
 .card-header {
-  background: #e962c4;
-  border-radius: 20px 20px 0 0!important;
+  background: linear-gradient(90deg, #24afd2, #047ad2 20%, #a40d84);
+  border-radius: 15px 15px 0 0!important;
 }
 
 .card-body .btn {
@@ -214,34 +214,35 @@ p {
 }
 
 .card {
-    border-radius: 20px 20px 2px 2px!important;
+    border: none;
+    border-radius: 15px 15px 1px 1px!important;
     margin: 10px 0 10px;
 }
 
 .card-free .btn-outline-dark {
-  border-color: #e962c4;
+  border-color: #24afd2;
 }
 
 .card-free .btn-outline-dark:hover {
-  background: #e962c4;
+  background: #24afd2;
 }
 
-.card-m .btn, .card-xl .btn {
-  background: #e962c4;
-  border-color: #e962c4;
+.card-m .btn {
+  background: #047ad2;
+  border: none;
 }
 
-.card-m .btn:hover, .card-xl .btn:hover {
-  background: #e97bc9;
-  border-color: #e97bc9;
+ .card-xl .btn {
+   background: linear-gradient( 45deg, #047ad2 5%,#24afd2);
+   border: none;
+ }
+
+.card-m .btn:hover {
+  background: #529ad7;
 }
 
-.card-xl {
-  border-color: #e962c4;
-  background-image: url(../images/cardbg.png);
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
+.card-xl .btn:hover  {
+ opacity: 0.8;
 }
 
 
@@ -333,6 +334,11 @@ p {
 
   .testandpress {
     background-image: url(../images/background1200.png);
+  }
+
+  .h2pricing {
+      margin-top: 25px;
+  }
 
 }
 
@@ -431,10 +437,6 @@ p {
       overflow: hidden;  /* prevents extra lines from being visible */
   }
 
-  .card-xl {
-    background-image: url(../images/cardbgmobile.png);
-  }
-
   .preise {
     padding: 10px 68px 20px;
   }
@@ -445,10 +447,16 @@ p {
 
   .h2pricing h2 {
     font-size: 1.8rem;
+    margin-top: 20px;
   }
 
 .card-body h2 {
-  margin: 10px;
+  margin: 10px 10px 15px;
+  font-size: 1.9rem;
+}
+
+.card-body p {
+  font-size: 1rem;
 }
 
 .card-body .btn {
@@ -458,6 +466,8 @@ p {
   font-size: 1rem;
 }
 
-
+.card-header h3 {
+  font-size: 1.5rem;
+}
 
 }
