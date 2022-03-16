@@ -99,7 +99,7 @@ p {
   z-index: 10;
   position: relative;
   background: white;
-  padding: 7% 15%;
+  padding: 7% 15% 3%;
 }
 
 .feature-box {
