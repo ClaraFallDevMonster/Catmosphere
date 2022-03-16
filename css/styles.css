@@ -122,7 +122,7 @@ p {
 }
 
 .carousel-item {
-    padding: 15% 15% 0;
+    padding: 13% 15% 0;
 }
 
 .carousel-control-prev {
@@ -173,6 +173,70 @@ p {
   width: 11%;
   margin: 5% 2% 1%;
 }
+
+#pricing {
+  text-align: center;
+}
+
+.h2pricing {
+    padding: 3% 15%;
+    margin-top: 40px;
+}
+
+.pricing-col {
+  padding: 3% 2%;
+}
+
+.preise {
+  padding: 10px 100px 20px;
+  --bs-gutter-x: 0;
+}
+
+.card-header h3 {
+  margin: 10px;
+  color: white;
+}
+
+.card-header {
+  background: #e962c4;
+  border-radius: 20px 20px 0 0!important;
+}
+
+.card-body .btn {
+  font-size: 1.5rem;
+}
+
+.card {
+    border-radius: 20px 20px 2px 2px!important;
+    margin: 10px 0 10px;
+}
+
+.card-free .btn-outline-dark {
+  border-color: #e962c4;
+}
+
+.card-free .btn-outline-dark:hover {
+  background: #e962c4;
+}
+
+.card-m .btn, .card-xl .btn {
+  background: #e962c4;
+  border-color: #e962c4;
+}
+
+.card-m .btn:hover, .card-xl .btn:hover {
+  background: #e97bc9;
+  border-color: #e97bc9;
+}
+
+.card-xl {
+  border-color: #e962c4;
+  background-image: url(../images/cardbg.png);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 
 @media screen and (max-width: 1200px) {
 
@@ -360,5 +424,24 @@ p {
       overflow: hidden;  /* prevents extra lines from being visible */
   }
 
+  .card-xl {
+    background-image: url(../images/cardbgmobile.png);
+  }
+
+  .preise {
+    padding: 10px 68px 20px;
+  }
+
+  .h2pricing {
+      padding: 5% 15%;
+  }
+
+  .h2pricing h2 {
+    font-size: 1.8rem;
+  }
+
+.card-body h2 {
+  margin-top: 5px;
+}
 
 }
