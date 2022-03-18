@@ -245,6 +245,36 @@ p {
  opacity: 0.8;
 }
 
+#cta {
+  background: #a40d84;
+  color: white;
+  padding: 7% 15%;
+  text-align: center;
+}
+
+#cta p {
+  color: white;
+}
+
+.cta-heading {
+  font-size: 3.2rem;
+  line-height: 1.5;
+}
+
+.btn-cta {
+    margin: 3% 2% 0 0;
+    font-size: 1.5rem;
+}
+
+#footer {
+  padding: 7% 15% 5%;
+  text-align: center;
+}
+
+.iconfooter {
+  margin: 40px 7px;
+}
+
 
 @media screen and (max-width: 1280px) {
 
@@ -373,6 +403,10 @@ p {
 
   #title {
     height: 100vh;
+  }
+
+  .cta-heading {
+    font-size: 2.5rem;
   }
 
 }
@@ -517,16 +551,56 @@ p {
   font-size: 1.5rem;
 }
 
+.cta-heading {
+  font-size: 1.8rem;
 }
 
-@media screen and (max-width: 630px) {
+.btn-cta {
+    margin: 2% 2% 0 0;
+    font-size: 0.8rem;
+}
+
+#footer {
+  padding: 7% 15% 3%;
+}
+
+@media screen and (max-width: 360px) {
 
 h1 {
   font-size: 2rem;
+}
+
+.testimonial-text {
+    line-height: 1.8em;
+    height: 10.8em;       /* height is 2x line-height, so two lines will display */
+    overflow: hidden;  /* prevents extra lines from being visible */
 }
 
 .download-button {
   margin-top: 20px;
 }
 
+
+
+}
+
+@media screen and (max-width: 280px) {
+  .testimonial-text {
+    font-size: 1.2rem;
+  }
+  .preise {
+    padding: 10px 40px 20px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .h2pricing h2 {
+    font-size: 1.5rem;
+  }
+
+  .card-header h3 {
+    font-size: 1.5rem;
+  }
 }
