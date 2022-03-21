@@ -32,7 +32,6 @@ p {
   font-size: 1.6rem;
 }
 
-
 .navpic {
   padding: 6% 0 6% 5%;
   width: 200px;
@@ -216,7 +215,7 @@ p {
 .card {
     border: none;
     border-radius: 15px 15px 1px 1px!important;
-    margin: 10px 0 10px;
+    margin-bottom: 10px;
 }
 
 .card-free .btn-outline-dark {
@@ -256,14 +255,19 @@ p {
   color: white;
 }
 
+#cta h3 {
+  margin: 8% 0 5%;
+}
+
 .cta-heading {
   font-size: 3.2rem;
   line-height: 1.5;
 }
 
 .btn-cta {
-    margin: 3% 2% 0 0;
+    margin: 5% 2% 0 0;
     font-size: 1.5rem;
+    padding: 5px 10px;
 }
 
 #footer {
@@ -389,6 +393,12 @@ p {
   .h2pricing {
       margin-top: 25px;
   }
+
+  #cta h3 {
+    margin: 8% 0 9%;
+  }
+
+}
 
 @media screen and (max-width: 912px) {
 
@@ -556,12 +566,22 @@ p {
 }
 
 .btn-cta {
-    margin: 2% 2% 0 0;
+    margin: 5% 2% 8% 0;
     font-size: 0.8rem;
 }
 
 #footer {
   padding: 7% 15% 3%;
+}
+
+#cta p {
+  margin-top: 5%;
+}
+
+#cta h3 {
+  margin: 12% 0 12%;
+}
+
 }
 
 @media screen and (max-width: 360px) {
