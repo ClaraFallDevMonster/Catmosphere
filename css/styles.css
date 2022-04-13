@@ -91,7 +91,8 @@ p {
   width: 60%;
   transform: rotate(21deg);
   position: relative;
-  left: 10%;
+  left: 20%;
+  top: 10%;
 }
 
 #features {
@@ -282,6 +283,11 @@ p {
 
 @media screen and (max-width: 1280px) {
 
+
+  h1 {
+    font-size: 4rem;
+  }
+
   .title-img {
     left: 30%;
     top: 10%;
@@ -290,14 +296,6 @@ p {
 }
 
 @media screen and (max-width: 1024px) {
-
-  h1 {
-    font-size: 4.5rem;
-  }
-
-.title-img {
-  left: 20%;
-}
 
   #title {
     height: 100vh;
@@ -327,13 +325,8 @@ p {
   }
 
   h1 {
-    font-size: 4rem;
-    margin-bottom: 3rem;
-  }
-
-  .title-img {
-    width: 70%;
-    margin-top: 17%;
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
   }
 
   h2 {
@@ -356,6 +349,7 @@ p {
   .title-img {
     width: 80%;
     margin-top: 15%;
+    left: 20%;
   }
 
   .featuresimg {
@@ -400,24 +394,138 @@ p {
 
 }
 
+
+
+
+
+@media screen and (max-width: 992px) {
+
+.title-img {
+    width: 30%;
+    margin-top: 1%;
+    left: 55%;
+
+}
+
+
 @media screen and (max-width: 912px) {
 
   h1 {
-    font-size: 4.8rem;
-  }
-
-  .title-img {
-    width: 60%;
-    top: 10%;
+    font-size: 4rem;
   }
 
   #title {
     height: 100vh;
   }
 
+  .title-img {
+      left: 50%
+  }
+
   .cta-heading {
     font-size: 2.5rem;
   }
+
+}
+
+@media only screen
+  and (min-device-width: 1024px)
+  and (max-device-height: 1366px)
+  and (orientation: portrait)
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+
+  #title {
+    height: 100vh;
+  }
+
+  h1 {
+    font-size: 5rem;
+    margin-top: 5%;
+  }
+
+    .title-img {
+        left: 45%;
+        top: 15%;
+        width: 50%;
+    }
+
+    .download-button {
+      margin: 10% 4% 0 0;
+      font-size: 1.8rem;
+    }
+
+}
+
+
+@media only screen and (device-width: 820px) and (orientation:portrait) {
+
+  #title {
+    height: 100vh;
+  }
+
+  h1 {
+    font-size: 5rem;
+    margin-top: 5%;
+  }
+
+    .title-img {
+        left: 45%;
+        top: 15%;
+        width: 50%;
+    }
+
+    .download-button {
+      margin: 10% 4% 0 0;
+      font-size: 1.8rem;
+    }
+
+}
+
+@media only screen and (device-width: 768px) and (orientation:portrait) {
+
+  #title {
+    height: 100vh;
+  }
+
+  h1 {
+    font-size: 4.6rem;
+    margin-top: 5%;
+  }
+
+    .title-img {
+        left: 45%;
+        top: 15%;
+        width: 50%;
+    }
+
+    .download-button {
+      margin: 10% 4% 0 0;
+      font-size: 1.8rem;
+    }
+
+}
+
+@media only screen and (device-width: 912px) and (orientation:portrait) {
+
+  #title {
+    height: 100vh;
+  }
+
+  h1 {
+    font-size: 4.6rem;
+    margin-top: 5%;
+  }
+
+    .title-img {
+        left: 40%;
+        top: 18%;
+        width: 53%;
+    }
+
+    .download-button {
+      margin: 10% 4% 0 0;
+      font-size: 2.3rem;
+    }
 
 }
 
@@ -431,12 +539,6 @@ p {
     line-height: 1.8em;
       height: 9em;       /* height is 2x line-height, so two lines will display */
       overflow: hidden;  /* prevents extra lines from being visible */
-  }
-
-  .title-img {
-    width: 50%;
-    margin-top: 15%;
-    left: 25%;
   }
 
 }
@@ -454,7 +556,7 @@ p {
 }
 
 .download-button {
-  margin: 2% 2% 0 0;
+  margin: 7% 2% 0 0;
   font-size: 1rem;
 }
 
@@ -464,7 +566,7 @@ p {
 }
 
   h1 {
-    font-size: 3rem;
+    font-size: 2.8rem;
     margin-bottom: 2rem;
   }
 
@@ -488,8 +590,7 @@ p {
   .title-img {
     width: 70%;
     margin-top: 15%;
-    left: 10%;
-    top: 6%;
+    left: 20%;
   }
 
   .featuresimg {
@@ -584,10 +685,14 @@ p {
 
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 375px) {
 
 h1 {
-  font-size: 2rem;
+  font-size: 2.5rem;
+}
+
+.title-img {
+    width: 60%;
 }
 
 .testimonial-text {
@@ -623,4 +728,13 @@ h1 {
   .card-header h3 {
     font-size: 1.5rem;
   }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .download-button {
+    font-size: 0.8rem;
+  }
+
 }
