@@ -152,7 +152,7 @@ p {
 
 .testimonial-text {
   line-height: 1.8em;
-    height: 5.4em;       /* height is 2x line-height, so two lines will display */
+    height: 5.4em;       /* height is 3x line-height, so 3 lines will display */
     overflow: hidden;  /* prevents extra lines from being visible */
 }
 
@@ -368,7 +368,7 @@ p {
 
   .testimonial-text {
     line-height: 1.8em;
-      height: 5.4em;       /* height is 2x line-height, so two lines will display */
+      height: 5.4em;       /* height is 3x line-height, so 3 lines will display */
       overflow: hidden;  /* prevents extra lines from being visible */
   }
 
@@ -407,6 +407,8 @@ p {
 
 }
 
+}
+
 
 @media screen and (max-width: 912px) {
 
@@ -428,14 +430,15 @@ p {
 
 }
 
+
 @media only screen
   and (min-device-width: 1024px)
   and (max-device-height: 1366px)
   and (orientation: portrait)
-  and (-webkit-min-device-pixel-ratio: 1.5) {
+  and (-webkit-min-device-pixel-ratio: 2) {
 
   #title {
-    height: 100vh;
+    height: 58vh;
   }
 
   h1 {
@@ -480,6 +483,7 @@ p {
     }
 
 }
+
 
 @media only screen and (device-width: 768px) and (orientation:portrait) {
 
@@ -529,6 +533,7 @@ p {
 
 }
 
+
 @media screen and (max-width: 768px) {
 
 #title {
@@ -537,7 +542,7 @@ p {
 
   .testimonial-text {
     line-height: 1.8em;
-      height: 9em;       /* height is 2x line-height, so two lines will display */
+      height: 9em;       /* height is 5x line-height, so 5 lines will display */
       overflow: hidden;  /* prevents extra lines from being visible */
   }
 
@@ -625,7 +630,7 @@ p {
 
   .testimonial-text {
     line-height: 1.8em;
-      height: 7.2em;       /* height is 2x line-height, so two lines will display */
+      height: 7.2em;       /* height is 4x line-height, so 4 lines will display */
       overflow: hidden;  /* prevents extra lines from being visible */
   }
 
@@ -685,6 +690,7 @@ p {
 
 }
 
+
 @media screen and (max-width: 375px) {
 
 h1 {
@@ -697,7 +703,7 @@ h1 {
 
 .testimonial-text {
     line-height: 1.8em;
-    height: 10.8em;       /* height is 2x line-height, so two lines will display */
+    height: 10.8em;       /* height is 6x line-height, so 6 lines will display */
     overflow: hidden;  /* prevents extra lines from being visible */
 }
 
@@ -706,8 +712,8 @@ h1 {
 }
 
 
-
 }
+
 
 @media screen and (max-width: 280px) {
   .testimonial-text {
