@@ -177,7 +177,7 @@ p {
   text-align: center;
 }
 
-.h2pricing {
+.pricingheading h2 {
     padding: 3% 15%;
     margin-top: 30px;
 }
@@ -384,7 +384,7 @@ p {
     background-image: url(../images/background1200.png);
   }
 
-  .h2pricing {
+  .pricingheading h2 {
       margin-top: 25px;
   }
 
@@ -433,23 +433,24 @@ p {
 
 @media only screen
   and (min-device-width: 1024px)
-  and (max-device-height: 1366px)
+  and (min-device-height: 1366px)
   and (orientation: portrait)
   and (-webkit-min-device-pixel-ratio: 2) {
 
   #title {
     height: 58vh;
+    margin: 0;
   }
 
   h1 {
-    font-size: 5rem;
+    font-size: 3.7rem;
     margin-top: 5%;
   }
 
     .title-img {
-        left: 45%;
-        top: 15%;
-        width: 50%;
+        left: 30%;
+        top: 10%;
+        width: 70%;
     }
 
     .download-button {
@@ -638,13 +639,10 @@ p {
     padding: 10px 68px 20px;
   }
 
-  .h2pricing {
+  .pricingheading h2 {
       padding: 5% 15%;
-  }
-
-  .h2pricing h2 {
-    font-size: 1.8rem;
-    margin-top: 20px;
+      font-size: 1.8rem;
+      margin-top: 30px;
   }
 
 .card-body h2 {
@@ -727,7 +725,7 @@ h1 {
     font-size: 1.5rem;
   }
 
-  .h2pricing h2 {
+  .pricingheading h2 {
     font-size: 1.5rem;
   }
 
