@@ -30,4 +30,5 @@ else {
   document.getElementById("prozent").innerHTML =  name1 + " your Love Score with " + name2 + " is " + loveScore + "%";
   document.getElementById("text").innerHTML = "Diese Person ist nicht die richtige! Am besten einen Korb geben, eine Abfuhr, eine Backpfeife, einen Arschtritt. Meat Loafs “I would do anything for love, but I won’t do that” bezieht sich im übrigen auf die Weigerung, dem ostdeutschen Lebenspartner “Tomatensauce” aus Mehlschwitze und Ketchup zu machen. Falls diese Person allerdings Freundschaft Plus will - schlag zu.";
 }
+
 }
