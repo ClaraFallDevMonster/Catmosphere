@@ -352,7 +352,7 @@ form h3 {
 #footer {
   padding: 3% 15% 1%;
   text-align: center;
-  background: #0f49cf;
+  background: linear-gradient( 90deg, #24afd2 5%, #265bd3);
   color: white;
 }
 
