@@ -24,7 +24,7 @@
     <!-- Nav Bar -->
 
     <nav class="navbar sticky-top navbar-expand-lg navbar-dark">
-      <a class="navbar-brand" href="#"> <img class="navpic d-inline-block align-text-top" src="images/logonav.png" alt="" width="240" height="90"</a>
+      <a class="navbar-brand" href="#"> <img class="navpic d-inline-block" src="images/logonav.png" alt="Logo" width="240" height="90"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -42,6 +42,7 @@
         </ul>
       </div>
     </nav>
+
 
 <!-- Title -->
 
@@ -240,13 +241,19 @@
  <div class="col-lg-6 input">
   <form>
   <h3>Love-Calculator</h3>
+  <div class="row">
+  <div class="col-lg-12">
   <label for="YourName">Your cat's name:  </label>
   <input id="YourName" type="text" name="YourName">
+  </div>
+  <div class="col-lg-12 lovecalchead">
   <label for="OtherName">Other cat's name:  </label>
   <input id="OtherName" type="text" name="OtherName">
+  </div>
+  </div>
   <br>
   <br>
-  <button class="btn btn-lg btn-dark lovecalcbtn" type="button" onclick="lovegenerator();" type="button" id="lovecalcbtn" name="button">Let the magic happen! <i class="ri-hearts-line ri-xs"></i></button>
+  <button class="btn btn-lg lovecalcbtn" type="button" onclick="lovegenerator();" type="button" id="lovecalcbtn" name="button">Let the magic happen! <i class="ri-hearts-line ri-xs"></i></button>
   </form>
 </div>
 </div>

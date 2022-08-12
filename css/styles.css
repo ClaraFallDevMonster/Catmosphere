@@ -47,7 +47,7 @@ p {
 .navbar {
   padding: 0;
   height: 90px;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0));
 }
 
 .nav-link {
@@ -56,16 +56,20 @@ p {
   padding-right: 10px !important;
   padding-left: 36px !important;
   text-align: right;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
+}
+
+.navbar-toggler {
+  margin: 10px; !important;
+}
+
+.show {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0));
 }
 
 .nav-link:hover {
   color: white !important;
 }
 
-.navbar-toggler {
-  margin: 10px !important;
-}
 
 #title {
   height: 100vh;
@@ -273,12 +277,9 @@ p {
     padding: 5px 10px;
 }
 
-
 #lovecalculator {
   padding: 7% 15%;
 }
-
-
 
 input {
   height: 40px;
@@ -339,7 +340,6 @@ form h3 {
   color: #a40d84;
   padding: 7% 15%;
 }
-
 
 #footer {
   padding: 3% 15% 1%;
@@ -476,7 +476,6 @@ form h3 {
     width: 30%;
     margin-top: 1%;
     left: 55%;
-
 }
 
 }
