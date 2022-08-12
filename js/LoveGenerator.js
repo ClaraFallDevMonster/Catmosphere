@@ -3,6 +3,7 @@ var yourName = "";
 var othername = "";
 yourName = document.getElementById("YourName").value;
 otherName = document.getElementById("OtherName").value;
+
 var loveScore = Math.random();
 loveScore = Math.floor(loveScore * 100) +1;
 
@@ -14,7 +15,10 @@ var nameLower2 = otherName.slice(1,yourName.lenght);
 var name1 = nameUpper1.toUpperCase() + nameLower1.toLowerCase();
 var name2 = nameUpper2.toUpperCase() + nameLower2.toLowerCase();
 
-if (loveScore > 80) {
+if (yourName.length < 2 | otherName.length < 2) {
+    window.alert("You have to enter 2 names first!");
+}
+else if (loveScore > 80) {
   document.getElementById("prozent").innerHTML = name1 + " your Love Score with " + name2 + " is " + loveScore + "%";
   document.getElementById("text").innerHTML = "Der richtige Deckel für deinen hässlichen Topf. Kaufe dieser Person am besten sofort hübsche Unterwäsche um auf diesem Wege zu zeigen: Ich liebe dich trotz deines Übergewichts.";
 }
@@ -30,5 +34,8 @@ else {
   document.getElementById("prozent").innerHTML =  name1 + " your Love Score with " + name2 + " is " + loveScore + "%";
   document.getElementById("text").innerHTML = "Diese Person ist nicht die richtige! Am besten einen Korb geben, eine Abfuhr, eine Backpfeife, einen Arschtritt. Meat Loafs “I would do anything for love, but I won’t do that” bezieht sich im übrigen auf die Weigerung, dem ostdeutschen Lebenspartner “Tomatensauce” aus Mehlschwitze und Ketchup zu machen. Falls diese Person allerdings Freundschaft Plus will - schlag zu.";
 }
+
+
+
 
 }
