@@ -1,6 +1,8 @@
 html, body {
   font-family: 'Hubballi', cursive;
   font-size: 100%;
+  background: #fafafa;
+  color: 101010;
 }
 
 h1 {
@@ -350,7 +352,7 @@ form h3 {
 #footer {
   padding: 3% 15% 1%;
   text-align: center;
-  background: #047ad2;
+  background: #0f49cf;
   color: white;
 }
 
