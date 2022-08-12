@@ -13,6 +13,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Hubballi&family=Pacifico&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
   <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <script type="text/javascript" src="js/LoveGenerator.js"></script>
 </head>
 
 <body>
@@ -23,7 +24,7 @@
     <!-- Nav Bar -->
 
     <nav class="navbar sticky-top navbar-expand-lg navbar-dark">
-      <a class="navbar-brand" href="#"> <img class="navpic" src="images/logonav.png" alt="" width="240" height="90" class="d-inline-block align-text-top"></a>
+      <a class="navbar-brand" href="#"> <img class="navpic d-inline-block align-text-top" src="images/logonav.png" alt="" width="240" height="90"</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -42,9 +43,9 @@
       </div>
     </nav>
 
-    <div class="container-fluid">
+<!-- Title -->
 
-      <!-- Title -->
+    <div class="container-fluid">
 
       <div class="row">
 
@@ -224,6 +225,40 @@
       <button class="btn btn-lg btn-light btn-cta download-button" type="button"><i class="ri-google-play-fill ri-xs"></i> Download</button>
   </section>
 
+
+<!-- Love Calculator -->
+
+<section id="lovecalculator">
+
+<div class="row">
+  <div class="col-lg-6 lovecalchead">
+  <h2>Wanna know if your cats match together?</h2>
+    <br>
+  <p>Just type the names of your fluffy couple in the fields below!</p>
+ </div>
+
+ <div class="col-lg-6 input">
+  <form>
+  <h3>Love-Calculator</h3>
+  <label for="YourName">Your cat's name:  </label>
+  <input id="YourName" type="text" name="YourName">
+  <label for="OtherName">Other cat's name:  </label>
+  <input id="OtherName" type="text" name="OtherName">
+  <br>
+  <br>
+  <button class="btn btn-lg btn-dark lovecalcbtn" type="button" onclick="lovegenerator();" type="button" id="lovecalcbtn" name="button">Let the magic happen! <i class="ri-hearts-line ri-xs"></i></button>
+  </form>
+</div>
+</div>
+
+  </section>
+
+  <!-- Output -->
+
+  <section id="output">
+  <h3 id="prozent"></h3>
+  <p id="text"></p>
+  </section>
 
   <!-- Footer -->
 

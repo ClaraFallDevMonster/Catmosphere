@@ -20,7 +20,7 @@ h2 {
 
 h3 {
   font-family: 'Pacifico', cursive;
-  font-size: 2.2rem;
+  font-size: 2.4rem;
   margin-bottom: 20px;
 }
 
@@ -273,13 +273,87 @@ p {
     padding: 5px 10px;
 }
 
-#footer {
-  padding: 7% 15% 5%;
+
+#lovecalculator {
+  padding: 7% 15%;
+}
+
+
+
+input {
+  height: 40px;
+  width: 200px;
+  border-color: white;
+  box-shadow: 1px 1px 6px lightgrey;
+  border-radius: 5px;
+  text-align: center;
+  font-family: 'Hubballi', cursive;
+  color: #8f8f8f;
+  font-size: 1.6rem;
+  margin: 5%;
+}
+
+.input {
+  padding: 2%
+}
+
+.lovecalchead h2 {
+  margin: 0;
+}
+
+.lovecalchead {
+  padding: 2%;
+}
+
+label {
+  color: black;
+}
+
+form {
+  font-family: 'Hubballi', cursive;
+  color: #8f8f8f;
+  font-size: 1.6rem;
   text-align: center;
 }
 
+form h3 {
+  color: #a40d84;
+  margin: 0 0 5% 0;
+}
+
+.lovecalcbtn {
+  margin-top: 1%;
+  border-radius: 10px;
+  color: white;
+  background: linear-gradient( 45deg, #a40d84 5%,#24afd2);
+  border-style: none;
+  font-size: 1.5rem;
+}
+
+.lovecalcbtn:hover {
+   opacity: 0.5;
+   color: white;
+}
+
+#output {
+  color: #a40d84;
+  padding: 7% 15%;
+}
+
+
+#footer {
+  padding: 3% 15% 1%;
+  text-align: center;
+  background: #047ad2;
+  color: white;
+}
+
+#footer p {
+  color: white;
+}
+
 .iconfooter {
-  margin: 40px 7px;
+  margin: 20px 7px;
 }
 
 
@@ -507,6 +581,11 @@ p {
       font-size: 1.8rem;
     }
 
+    form h2 {
+      margin-top: 15%;
+    }
+
+
 }
 
 
@@ -520,6 +599,10 @@ p {
     line-height: 1.8em;
       height: 9em;       /* height is 5x line-height, so 5 lines will display */
       overflow: hidden;  /* prevents extra lines from being visible */
+  }
+
+  .lovecalcbtn {
+    font-size: 1.2rem;
   }
 
 }
@@ -545,6 +628,10 @@ p {
     .download-button {
       margin: 10% 4% 0 0;
       font-size: 1.8rem;
+    }
+
+    #lovecalculatorheading {
+      height: 50vh;
     }
 
 }
