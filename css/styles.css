@@ -20,7 +20,7 @@ h2 {
 
 h3 {
   font-family: 'Pacifico', cursive;
-  font-size: 2.4rem;
+  font-size: 2.2rem;
   margin-bottom: 20px;
 }
 
@@ -291,11 +291,15 @@ input {
   font-family: 'Hubballi', cursive;
   color: #8f8f8f;
   font-size: 1.6rem;
-  margin: 5%;
+}
+
+.names {
+  margin: 5% 0;
 }
 
 .input {
-  padding: 2%
+  padding-left: 3%;
+  margin-top: 2%;
 }
 
 .lovecalchead h2 {
@@ -303,7 +307,7 @@ input {
 }
 
 .lovecalchead {
-  padding: 2%;
+  padding-right: 3%;
 }
 
 label {
@@ -314,12 +318,13 @@ form {
   font-family: 'Hubballi', cursive;
   color: #8f8f8f;
   font-size: 1.6rem;
-  text-align: center;
+  text-align: right;
 }
 
 form h3 {
   color: #a40d84;
   margin: 0 0 5% 0;
+  font-size: 2.5rem;
 }
 
 .lovecalcbtn {
@@ -479,6 +484,10 @@ form h3 {
     left: 55%;
 }
 
+.names {
+  margin: 4% 0;
+}
+
 }
 
 
@@ -605,6 +614,14 @@ form h3 {
     font-size: 1.2rem;
   }
 
+  .names {
+    margin: 3% 0;
+  }
+
+  #output {
+    padding-top: 10%;
+  }
+
 }
 
 
@@ -669,7 +686,8 @@ form h3 {
   }
 
   h3 {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
+    line-height: normal;
   }
 
   p {
