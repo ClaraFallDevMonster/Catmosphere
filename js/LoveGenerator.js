@@ -39,7 +39,4 @@ else {
   document.getElementById("text").innerHTML = "Pawdon my language. You've got to be kitten me?! You guys don't match at all. You two together = a cat-astrophe!";
 }
 
-
-
-
 }
