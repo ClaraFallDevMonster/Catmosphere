@@ -20,6 +20,10 @@ h2 {
   margin: 30px;
 }
 
+.gamehead h2 {
+  margin-left: 0;
+}
+
 h3 {
   font-family: 'Pacifico', cursive;
   font-size: 2.2rem;
@@ -41,6 +45,24 @@ em {
 p {
   color: #8f8f8f;
   font-size: 1.6rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+#game a {
+  font-family: 'VT323', monospace;
+  box-shadow: inset 0 0 0 0 #24afd2;
+  color: #24afd2;
+  margin: 0 -.25rem;
+  padding: 0 .25rem;
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+#game a:hover {
+  box-shadow: inset 300px 0 0 0 #a40d84;
+  color: white;
 }
 
 .navpic {
@@ -79,7 +101,6 @@ p {
 .nav-link:hover {
   color: white !important;
 }
-
 
 #title {
   height: 100vh;
@@ -137,7 +158,7 @@ p {
 }
 
 .carousel-item {
-    padding: 13% 15% 0;
+  padding: 13% 15% 0;
 }
 
 .carousel-control-prev {
@@ -149,15 +170,15 @@ p {
 }
 
 .carousel-control-prev-icon {
-    background-image: url(../images/previous.png);
-    height: 30px;
-    width: 30px;
+  background-image: url(../images/previous.png);
+  height: 30px;
+  width: 30px;
 }
 
 .carousel-control-next-icon {
-    background-image: url(../images/next.png);
-    height: 30px;
-    width: 30px;
+  background-image: url(../images/next.png);
+  height: 30px;
+  width: 30px;
 }
 
 .testimonial-img {
@@ -168,8 +189,10 @@ p {
 
 .testimonial-text {
   line-height: 1.8em;
-    height: 5.4em;       /* height is 3x line-height, so 3 lines will display */
-    overflow: hidden;  /* prevents extra lines from being visible */
+  height: 5.4em;
+  /* height is 3x line-height, so 3 lines will display */
+  overflow: hidden;
+  /* prevents extra lines from being visible */
 }
 
 .testandpress {
@@ -194,8 +217,8 @@ p {
 }
 
 .pricingheading h2 {
-    padding: 3% 15%;
-    margin-top: 30px;
+  padding: 3% 15%;
+  margin-top: 30px;
 }
 
 .pricing-col {
@@ -214,7 +237,7 @@ p {
 
 .card-header {
   background: linear-gradient(90deg, #24afd2, #047ad2 20%, #a40d84);
-  border-radius: 15px 15px 0 0!important;
+  border-radius: 15px 15px 0 0 !important;
   opacity: 0.9;
 }
 
@@ -230,9 +253,9 @@ p {
 }
 
 .card {
-    border: none;
-    border-radius: 15px 15px 1px 1px!important;
-    margin-bottom: 10px;
+  border: none;
+  border-radius: 15px 15px 1px 1px !important;
+  margin-bottom: 10px;
 }
 
 .card-free .btn-outline-dark {
@@ -248,17 +271,17 @@ p {
   border: none;
 }
 
- .card-xl .btn {
-   background: linear-gradient( 45deg, #047ad2 5%,#24afd2);
-   border: none;
- }
+.card-xl .btn {
+  background: linear-gradient(45deg, #047ad2 5%, #24afd2);
+  border: none;
+}
 
 .card-m .btn:hover {
   background: #529ad7;
 }
 
-.card-xl .btn:hover  {
- opacity: 0.8;
+.card-xl .btn:hover {
+  opacity: 0.8;
 }
 
 #cta {
@@ -282,9 +305,9 @@ p {
 }
 
 .btn-cta {
-    margin: 5% 2% 0 0;
-    font-size: 1.5rem;
-    padding: 5px 10px;
+  margin: 5% 2% 0 0;
+  font-size: 1.5rem;
+  padding: 5px 10px;
 }
 
 #lovecalculator {
@@ -341,14 +364,14 @@ form h3 {
   margin-top: 1%;
   border-radius: 10px;
   color: white;
-  background: linear-gradient( 45deg, #24afd2 5%, #a40d84);
+  background: linear-gradient(45deg, #24afd2 5%, #a40d84);
   border-style: none;
   font-size: 1.5rem;
 }
 
 .lovecalcbtn:hover {
-   opacity: 0.7;
-   color: white;
+  opacity: 0.7;
+  color: white;
 }
 
 #output {
@@ -356,11 +379,20 @@ form h3 {
   padding-top: 6%;
 }
 
+#game {
+  background: #efefef;
+  padding: 7% 15%;
+}
+
+.link {
+  text-align: center;
+  padding-top: 5%;
+}
 
 #footer {
   padding: 3% 15% 1%;
   text-align: center;
-  background: linear-gradient( 90deg, #24afd2 5%, #265bd3);
+  background: linear-gradient(90deg, #24afd2 5%, #265bd3);
   color: white;
 }
 
@@ -372,10 +404,17 @@ form h3 {
   margin: 20px 7px;
 }
 
+.link {
+  font-size: 5rem;
+}
 
+.pixelcat {
+  height: 200px;
+  width: 200px;
+}
+
+/* MEDIA QUERIES */
 @media screen and (max-width: 1280px) {
-
-
   h1 {
     font-size: 4rem;
   }
@@ -385,10 +424,13 @@ form h3 {
     top: 10%;
   }
 
+  .pixelcat {
+    height: 160px;
+    width: 160px;
+  }
 }
 
 @media screen and (max-width: 1024px) {
-
   #title {
     height: 100vh;
   }
@@ -408,8 +450,8 @@ form h3 {
   }
 
   .container-fluid {
-      padding: 3% 15%;
-      margin-top: 1.2rem;
+    padding: 3% 15%;
+    margin-top: 1.2rem;
   }
 
   h1 {
@@ -461,8 +503,10 @@ form h3 {
 
   .testimonial-text {
     line-height: 1.8em;
-      height: 5.4em;       /* height is 3x line-height, so 3 lines will display */
-      overflow: hidden;  /* prevents extra lines from being visible */
+    height: 5.4em;
+    /* height is 3x line-height, so 3 lines will display */
+    overflow: hidden;
+    /* prevents extra lines from being visible */
   }
 
   .carousel-control-prev {
@@ -478,7 +522,7 @@ form h3 {
   }
 
   .pricingheading h2 {
-      margin-top: 25px;
+    margin-top: 25px;
   }
 
   #cta h3 {
@@ -489,30 +533,21 @@ form h3 {
     font-size: 1.3rem;
     margin-bottom: 5%;
   }
-
 }
 
-
-
-
-
 @media screen and (max-device-width: 992px) {
-
-.title-img {
+  .title-img {
     width: 30%;
     margin-top: 1%;
     left: 55%;
-}
+  }
 
-.names {
-  margin: 4% 0;
+  .names {
+    margin: 4% 0;
+  }
 }
-
-}
-
 
 @media screen and (max-device-width: 912px) {
-
   h1 {
     font-size: 4rem;
   }
@@ -522,7 +557,7 @@ form h3 {
   }
 
   .title-img {
-      left: 50%
+    left: 50%
   }
 
   .cta-heading {
@@ -537,10 +572,17 @@ form h3 {
     font-size: 1.2rem;
   }
 
+  .pixelcat {
+    height: 100px;
+    width: 100px;
+  }
+
+  .gamelink {
+    font-size: 2rem;
+  }
 }
 
 @media only screen and (max-device-width: 912px) and (orientation:portrait) {
-
   #title {
     height: 100vh;
   }
@@ -550,28 +592,19 @@ form h3 {
     margin-top: 5%;
   }
 
-    .title-img {
-        left: 40%;
-        top: 18%;
-        width: 53%;
-    }
+  .title-img {
+    left: 40%;
+    top: 18%;
+    width: 53%;
+  }
 
-    .download-button {
-      margin: 10% 4% 0 0;
-      font-size: 2.3rem;
-    }
-
+  .download-button {
+    margin: 10% 4% 0 0;
+    font-size: 2.3rem;
+  }
 }
 
-
-
-
-@media only screen
-  and (min-device-width: 1024px)
-  and (min-device-height: 1366px)
-  and (orientation: portrait)
-  and (-webkit-min-device-pixel-ratio: 2) {
-
+@media only screen and (min-device-width: 1024px) and (min-device-height: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
   #title {
     height: 58vh;
     margin: 0;
@@ -582,22 +615,19 @@ form h3 {
     margin-top: 5%;
   }
 
-    .title-img {
-        left: 30%;
-        top: 10%;
-        width: 70%;
-    }
+  .title-img {
+    left: 30%;
+    top: 10%;
+    width: 70%;
+  }
 
-    .download-button {
-      margin: 10% 4% 0 0;
-      font-size: 1.8rem;
-    }
-
+  .download-button {
+    margin: 10% 4% 0 0;
+    font-size: 1.8rem;
+  }
 }
 
-
 @media only screen and (max-device-width: 820px) and (orientation:portrait) {
-
   #title {
     height: 100vh;
   }
@@ -607,46 +637,41 @@ form h3 {
     margin-top: 5%;
   }
 
-    .title-img {
-        left: 45%;
-        top: 15%;
-        width: 50%;
-    }
+  .title-img {
+    left: 45%;
+    top: 15%;
+    width: 50%;
+  }
 
-    .download-button {
-      margin: 10% 4% 0 0;
-      font-size: 1.8rem;
-    }
+  .download-button {
+    margin: 10% 4% 0 0;
+    font-size: 1.8rem;
+  }
 
-    form h2 {
-      margin-top: 15%;
-    }
-
-
+  form h2 {
+    margin-top: 15%;
+  }
 }
-
 
 @media screen and (max-device-width: 768px) {
-
-#title {
-  height: 100vh;
-}
+  #title {
+    height: 100vh;
+  }
 
   .testimonial-text {
     line-height: 1.8em;
-      height: 9em;       /* height is 5x line-height, so 5 lines will display */
-      overflow: hidden;  /* prevents extra lines from being visible */
+    height: 9em;
+    /* height is 5x line-height, so 5 lines will display */
+    overflow: hidden;
+    /* prevents extra lines from being visible */
   }
 
   .names {
     margin: 3% 0;
   }
-
 }
 
-
 @media only screen and (max-device-width: 768px) and (orientation:portrait) {
-
   #title {
     height: 100vh;
   }
@@ -656,44 +681,41 @@ form h3 {
     margin-top: 5%;
   }
 
-    .title-img {
-        left: 45%;
-        top: 15%;
-        width: 50%;
-    }
+  .title-img {
+    left: 45%;
+    top: 15%;
+    width: 50%;
+  }
 
-    .download-button {
-      margin: 10% 4% 0 0;
-      font-size: 1.8rem;
-    }
+  .download-button {
+    margin: 10% 4% 0 0;
+    font-size: 1.8rem;
+  }
 
-    #lovecalculatorheading {
-      height: 50vh;
-    }
-
+  #lovecalculatorheading {
+    height: 50vh;
+  }
 }
-
 
 @media screen and (max-device-width: 564px) {
+  .navbar {
+    height: 70px;
+  }
 
-.navbar {
-  height: 70px;
-}
+  .navpic {
+    width: 160px;
+    height: 70px;
+  }
 
-.navpic {
-  width: 160px;
-  height: 70px;
-}
+  .download-button {
+    margin: 7% 2% 0 0;
+    font-size: 1rem;
+  }
 
-.download-button {
-  margin: 7% 2% 0 0;
-  font-size: 1rem;
-}
-
-.container-fluid {
+  .container-fluid {
     padding: 3% 15%;
     margin-top: 1.2rem;
-}
+  }
 
   h1 {
     font-size: 2.8rem;
@@ -756,8 +778,10 @@ form h3 {
 
   .testimonial-text {
     line-height: 1.8em;
-      height: 7.2em;       /* height is 4x line-height, so 4 lines will display */
-      overflow: hidden;  /* prevents extra lines from being visible */
+    height: 7.2em;
+    /* height is 4x line-height, so 4 lines will display */
+    overflow: hidden;
+    /* prevents extra lines from being visible */
   }
 
   .preise {
@@ -765,84 +789,86 @@ form h3 {
   }
 
   .pricingheading h2 {
-      padding: 5% 15%;
-      font-size: 1.8rem;
-      margin-top: 30px;
+    padding: 5% 15%;
+    font-size: 1.8rem;
+    margin-top: 30px;
   }
 
-.card-body h2 {
-  margin: 10px 10px 15px;
-  font-size: 1.9rem;
-}
+  .card-body h2 {
+    margin: 10px 10px 15px;
+    font-size: 1.9rem;
+  }
 
-.card-body p {
-  font-size: 1rem;
-}
+  .card-body p {
+    font-size: 1rem;
+  }
 
-.card-body .btn {
-  margin: 20px 0 10px;
-  width: 60%;
-  height: 40px;
-  font-size: 1rem;
-}
+  .card-body .btn {
+    margin: 20px 0 10px;
+    width: 60%;
+    height: 40px;
+    font-size: 1rem;
+  }
 
-.card-header h3 {
-  font-size: 1.5rem;
-}
+  .card-header h3 {
+    font-size: 1.5rem;
+  }
 
-.cta-heading {
-  font-size: 1.8rem;
-}
+  .cta-heading {
+    font-size: 1.8rem;
+  }
 
-.btn-cta {
+  .btn-cta {
     margin: 5% 2% 8% 0;
     font-size: 0.8rem;
-}
+  }
 
-#footer {
-  padding: 7% 15% 3%;
-}
+  #footer {
+    padding: 7% 15% 3%;
+  }
 
-#cta p {
-  margin-top: 5%;
-}
+  #cta p {
+    margin-top: 5%;
+  }
 
-#cta h3 {
-  margin: 12% 0 12%;
-}
+  #cta h3 {
+    margin: 12% 0 12%;
+  }
 
+  .pixelcat {
+    height: 90px;
+    width: 90px;
+  }
 }
-
 
 @media screen and (max-device-width: 375px) {
+  h1 {
+    font-size: 2.5rem;
+  }
 
-h1 {
-  font-size: 2.5rem;
-}
-
-.title-img {
+  .title-img {
     width: 60%;
     margin-top: 5%;
-}
+  }
 
-.testimonial-text {
+  .testimonial-text {
     line-height: 1.8em;
-    height: 10.8em;       /* height is 6x line-height, so 6 lines will display */
-    overflow: hidden;  /* prevents extra lines from being visible */
+    height: 10.8em;
+    /* height is 6x line-height, so 6 lines will display */
+    overflow: hidden;
+    /* prevents extra lines from being visible */
+  }
+
+  .download-button {
+    margin-top: 20px;
+  }
 }
-
-.download-button {
-  margin-top: 20px;
-}
-
-
-}
-
 
 @media screen and (max-device-width: 280px) {
   .testimonial-text {
     font-size: 1.2rem;
   }
+
   .preise {
     padding: 10px 40px 20px;
   }
@@ -866,5 +892,4 @@ h1 {
   .download-button {
     font-size: 0.8rem;
   }
-
 }
