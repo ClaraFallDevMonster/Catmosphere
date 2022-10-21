@@ -6,17 +6,31 @@ var userClickedPattern = [];
 var started = false;
 var level = 0;
 
-if (window.matchMedia('(max-width: 768px)').Matches) {
-  alert("Hello");
+let text;
+if (window.matchMedia("(max-width: 700px)").matches) {
+  text = "Click into the background to start";
+} else {
+  text = "Press a key to start";
 }
+document.getElementById("level-title").innerHTML = text;
 
-$(document).click(function() {
-  if (!started) {
-    $("#level-title").text("Level " + level);
-    nextSequence();
-    started = true;
-  }
-});
+if (window.matchMedia("(max-width: 700px)").matches) {
+  $(document).click(function() {
+    if (!started) {
+      $("#level-title").text("Level " + level);
+      nextSequence();
+      started = true;
+    }
+  });
+} else {
+  $(document).keypress(function() {
+    if (!started) {
+      $("#level-title").text("Level " + level);
+      nextSequence();
+      started = true;
+    }
+  });
+}
 
 
 $(".btn").click(function() {

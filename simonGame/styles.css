@@ -1,20 +1,22 @@
 body {
-  text-align: center;
+
   background: url(img/Background.png);
   background-position: center center;
   background-size: cover;
   height: 100%;
+  margin: 0;
 }
 
 #level-title {
+  text-align: center;
   font-family: 'Press Start 2P', cursive;
   font-size: 3rem;
-  margin:  5%;
+  margin:  4%;
   color: #fafafa;
 }
 
 .container {
-  height: 80vh;
+  text-align: center;
   display: block;
   width: 50%;
   margin: auto;
