@@ -6,27 +6,13 @@ var userClickedPattern = [];
 var started = false;
 var level = 0;
 
-if (window.matchMedia('(max-width: 768px)').matches) {
-
-$("#level-title").text("Click to start");
-
-  $(document).click(function() {
-    if (!started) {
-      $("#level-title").text("Level " + level);
-      nextSequence();
-      started = true;
-    }
-  });
-} else {
-  $(document).keypress(function() {
-    if (!started) {
-      $("#level-title").text("Level " + level);
-      nextSequence();
-      started = true;
-    }
-  });
-}
-
+$(document).click(function() {
+  if (!started) {
+    $("#level-title").text("Level " + level);
+    nextSequence();
+    started = true;
+  }
+});
 
 
 $(".btn").click(function() {
