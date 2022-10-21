@@ -730,7 +730,6 @@ form h3 {
 
   h3 {
     font-size: 1.7rem;
-    line-height: normal;
   }
 
   p {
@@ -795,9 +794,13 @@ form h3 {
     margin-top: 30px;
   }
 
+.card-header {
+  height: 60px;
+}
+
   .card-body h2 {
-    margin: 10px 10px 15px;
-    font-size: 1.9rem;
+    margin: 5px 10px 5px;
+    font-size: 1.5rem;
   }
 
   .card-body p {
@@ -805,10 +808,10 @@ form h3 {
   }
 
   .card-body .btn {
-    margin: 20px 0 10px;
+    margin: 15px 0 5px;
     width: 60%;
     height: 40px;
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 
   .card-header h3 {
@@ -883,10 +886,6 @@ form h3 {
   }
 
   .pricingheading h2 {
-    font-size: 1.5rem;
-  }
-
-  .card-header h3 {
     font-size: 1.5rem;
   }
 
