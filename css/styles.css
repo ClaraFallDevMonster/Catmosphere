@@ -20,10 +20,6 @@ h2 {
   margin: 30px;
 }
 
-.gamehead h2 {
-  margin-left: 0;
-}
-
 h3 {
   font-family: 'Pacifico', cursive;
   font-size: 2.2rem;
@@ -390,7 +386,7 @@ form h3 {
 
 .link {
   text-align: center;
-  padding-top: 5%;
+  padding: 5%;
 }
 
 #footer {
