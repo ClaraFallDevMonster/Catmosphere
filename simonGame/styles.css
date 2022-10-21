@@ -70,14 +70,21 @@ body {
   background-color: grey;
 }
 
+footer {
+  text-align: center;
+  padding: 10px 15px;
+}
+
 @media only screen and (max-device-width: 912px) and (orientation:portrait) {
 
   #level-title {
     margin: 20%;
+    font-size: 2rem;
+    line-height: 4rem;
   }
     .container {
       display: block;
-      width: 60%;
+      width: 80%;
       margin: 20% auto 0 auto;
       height: 50vh;
 
@@ -86,6 +93,19 @@ body {
     body {
       background: url(img/BackgroundMobile.png);
       background-size: cover;
+    }
+
+    .btn {
+      margin: 30px;
+      margin: 10px;
+      display: inline-block;
+      height: 180px;
+      width: 180px;
+    }
+
+    footer img {
+      height: 100px;
+      width: 100px;
     }
 
 }
@@ -94,10 +114,12 @@ body {
 
   #level-title {
     margin: 20%;
+    font-size: 2rem;
+    line-height: 4rem;
   }
     .container {
       display: block;
-      width: 60%;
+      width: 80%;
       margin: 20% auto 0 auto;
       height: 50vh;
 
@@ -107,6 +129,20 @@ body {
       background: url(img/BackgroundMobile.png);
       background-size: cover;
     }
+
+    .btn {
+      margin: 30px;
+      margin: 10px;
+      display: inline-block;
+      height: 180px;
+      width: 180px;
+    }
+
+    footer img {
+      height: 100px;
+      width: 100px;
+    }
+
 
 }
 
@@ -114,10 +150,12 @@ body {
 
   #level-title {
     margin: 20%;
+    font-size: 2rem;
+    line-height: 4rem;
   }
     .container {
       display: block;
-      width: 60%;
+      width: 80%;
       margin: 20% auto 0 auto;
       height: 50vh;
 
@@ -127,6 +165,20 @@ body {
       background: url(img/BackgroundMobile.png);
       background-size: cover;
     }
+
+    .btn {
+      margin: 30px;
+      margin: 10px;
+      display: inline-block;
+      height: 180px;
+      width: 180px;
+    }
+
+    footer img {
+      height: 100px;
+      width: 100px;
+    }
+
 
 }
 
@@ -135,18 +187,52 @@ body {
 
 #level-title {
   margin: 20%;
+  font-size: 1rem;
+  line-height: 2rem;
 }
   .container {
     display: block;
-    width: 60%;
-    margin: 20% auto 0 auto;
-    height: 68vh;
+    width: 80%;
+    margin: 40% auto 0 auto;
+    height: 50vh;
 
   }
 
   body {
     background: url(img/BackgroundMobile.png);
     background-size: cover;
+  }
+
+  .btn {
+    margin: 25px;
+    margin: 10px;
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+  }
+
+  footer img {
+    height: 100px;
+    width: 100px;
+  }
+
+}
+
+@media screen and (max-device-width: 360px) {
+
+  .container {
+    margin: 20% auto 0 auto;
+  }
+  
+}
+
+@media screen and (max-device-width: 280px) {
+
+  .btn {
+    margin: 10px;
+    display: inline-block;
+    height: 70px;
+    width: 70px;
   }
 
 }
