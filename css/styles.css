@@ -386,7 +386,7 @@ form h3 {
 
 .link {
   text-align: center;
-  padding: 5%;
+  padding: 7%;
 }
 
 #footer {
@@ -896,5 +896,14 @@ form h3 {
 
   .download-button {
     font-size: 0.8rem;
+  }
+
+.link {
+  font-size: 2rem;
+}
+
+  .pixelcat {
+    height: 50px;
+    width: 50px;
   }
 }
