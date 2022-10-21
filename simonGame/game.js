@@ -6,13 +6,28 @@ var userClickedPattern = [];
 var started = false;
 var level = 0;
 
-$(document).keypress(function() {
-  if (!started) {
-    $("#level-title").text("Level " + level);
-    nextSequence();
-    started = true;
-  }
-});
+if (window.matchMedia('(max-width: 768px)').matches) {
+
+$("#level-title").text("Click to start");
+
+  $(document).click(function() {
+    if (!started) {
+      $("#level-title").text("Level " + level);
+      nextSequence();
+      started = true;
+    }
+  });
+} else {
+  $(document).keypress(function() {
+    if (!started) {
+      $("#level-title").text("Level " + level);
+      nextSequence();
+      started = true;
+    }
+  });
+}
+
+
 
 $(".btn").click(function() {
   var userChosenColor = $(this).attr("id");
