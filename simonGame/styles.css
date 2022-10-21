@@ -1,0 +1,69 @@
+body {
+  text-align: center;
+  background: url(img/Background.png);
+  background-position: center center;
+  background-size: cover;
+  height: 100%;
+}
+
+#level-title {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 3rem;
+  margin:  5%;
+  color: #fafafa;
+}
+
+.container {
+  display: block;
+  width: 50%;
+  margin: auto;
+
+}
+
+.btn {
+  margin: 25px;
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+  border: 10px solid;
+  border-radius: 20%;
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+.pink {
+  background: url(img/GrumpyCat.png);
+  background-position: center center;
+  background-size: cover;
+  border-color: #a40d84;
+}
+
+.blue {
+  background: url(img/SweetCat.png);
+  background-position: center center;
+  background-size: cover;
+  border-color: #047ad2;
+}
+
+.cyan {
+  background: url(img/CuteCat.png);
+  background-position: center center;
+  background-size: cover;
+  border-color: #24afd2;
+}
+
+.rose {
+  background: url(img/Kitten.png);
+  background-position: center center;
+  background-size: cover;
+  border-color: #d264c2;
+}
+
+.pressed {
+  opacity: 30%;
+  box-shadow: 5px 5px 10px white;
+  background-color: grey;
+}
