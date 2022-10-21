@@ -6,6 +6,12 @@ var userClickedPattern = [];
 var started = false;
 var level = 0;
 
+alert("Hello");
+
+if (window.matchMedia('(max-width: 768px)').Matches) {
+  alert("Hello");
+}
+
 $(document).click(function() {
   if (!started) {
     $("#level-title").text("Level " + level);
