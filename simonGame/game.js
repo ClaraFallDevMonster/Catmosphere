@@ -1,10 +1,3 @@
-let text;
-if (window.matchMedia("(max-width: 700px)").matches) {
-  text = "Tap the Background to start";
-} else {
-  text = "Press a key to start";
-}
-
 var buttonColors = ["blue", "rose", "pink", "cyan"];
 
 var gamePattern = [];
@@ -12,6 +5,13 @@ var userClickedPattern = [];
 
 var started = false;
 var level = 0;
+
+let text;
+if (window.matchMedia("(max-width: 700px)").matches) {
+  text = "Tap the Background to start";
+} else {
+  text = "Press a key to start";
+}
 
 if (window.matchMedia("(max-width: 700px)").matches) {
   $(document).click(function() {
