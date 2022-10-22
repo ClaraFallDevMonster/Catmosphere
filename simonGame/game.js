@@ -1,3 +1,10 @@
+let text;
+if (window.matchMedia("(max-width: 700px)").matches) {
+  text = "Tap the Background to start";
+} else {
+  text = "Press a key to start";
+}
+
 var buttonColors = ["blue", "rose", "pink", "cyan"];
 
 var gamePattern = [];
@@ -5,14 +12,6 @@ var userClickedPattern = [];
 
 var started = false;
 var level = 0;
-
-let text;
-if (window.matchMedia("(max-width: 700px)").matches) {
-  text = "Click into the background to start";
-} else {
-  text = "Press a key to start";
-}
-document.getElementById("level-title").innerHTML = text;
 
 if (window.matchMedia("(max-width: 700px)").matches) {
   $(document).click(function() {
@@ -31,7 +30,7 @@ if (window.matchMedia("(max-width: 700px)").matches) {
     }
   });
 }
-
+document.getElementById("level-title").innerHTML = text;
 
 $(".btn").click(function() {
   var userChosenColor = $(this).attr("id");
@@ -64,6 +63,7 @@ function checkAnswer(currentLevel) {
     $("#level-title").text("Game Over, Press any Key to Restart");
 
     startOver();
+
   }
 }
 
