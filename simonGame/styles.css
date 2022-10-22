@@ -77,9 +77,6 @@ footer {
 
 @media only screen and (max-device-width: 912px) and (orientation:portrait) {
 
-body {
-  cursor: pointer;
-}
 
   #level-title {
     margin: 20%;
@@ -111,9 +108,6 @@ body {
 
 @media only screen and (min-device-width: 1024px) and (min-device-height: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
 
-  body {
-    cursor: pointer;
-  }
 
   #level-title {
     margin: 20%;
@@ -146,9 +140,6 @@ body {
 
 @media only screen and (max-device-width: 820px) and (orientation:portrait) {
 
-  body {
-    cursor: pointer;
-  }
 
   #level-title {
     margin: 20%;
@@ -182,9 +173,6 @@ body {
 
 @media screen and (max-device-width: 564px) {
 
-  body {
-    cursor: pointer;
-  }
 
 #level-title {
   margin: 20%;
