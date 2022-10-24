@@ -277,7 +277,7 @@
         <p class="lead">Send us a message</p>
       </div>
 
-      <form class="contact" method="post" action="kontaktformular.php">
+      <form class="contact" method="post" action="">
         <!--Form action (server php self) weglassen, da es Sicherheitslücken enthält (JS-Code kann mit eingebaut und abgesendet werden). Form wird trotzdem an die gleiche URL geschickt, in der sich die form befindet.-->
         <div class="card">
           <div class="card-body">
@@ -324,7 +324,7 @@
             <div class="row form-group">
               <label class="col-lg-2 col-form-label" for="message">Message:</label>
               <div class="col">
-                <textarea id="message" name="message" class="form-control" rows="3" placeholder="Your message"></textarea>
+                <textarea id="message" name="message" class="form-control" rows="3" placeholder="Your message" required></textarea>
               </div>
             </div>
             <div class="row form-group robotcheck">
