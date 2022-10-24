@@ -31,7 +31,6 @@ h4 {
   font-size: 1.8rem;
   margin: 4% 0;
   color: #101010;
-  text-align: left;
 }
 
 em {
@@ -49,15 +48,15 @@ a {
 
 #game a {
   font-family: 'VT323', monospace;
-  box-shadow: inset 0 0 0 0 #24afd2;
-  color: #24afd2;
+  box-shadow: inset 0 0 0 0 #a40d84;
+  color: #a40d84;
   margin: 0 -.25rem;
   padding: 0 .25rem;
   transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
 }
 
 #game a:hover {
-  box-shadow: inset 300px 0 0 0 #a40d84;
+  box-shadow: inset 300px 0 0 0 #24afd2;
   color: white;
 }
 
@@ -237,14 +236,14 @@ a {
   opacity: 0.9;
 }
 
-.card-body .btn {
+.card-preise .btn {
   font-size: 1.5rem;
   margin: 35px 0 20px;
   width: 60%;
   height: 50px;
 }
 
-.card-body p {
+.card-preise p {
   margin: 0;
 }
 
@@ -308,23 +307,26 @@ a {
 
 #lovecalculator {
   text-align: center;
-  padding: 7% 15%;
+  padding: 3% 15%;
 }
 
-input {
+.lovecalculator input {
   height: 40px;
   width: 200px;
   border-color: white;
   box-shadow: 1px 1px 6px lightgrey;
   border-radius: 5px;
-  text-align: center;
   font-family: 'Hubballi', cursive;
   color: #8f8f8f;
   font-size: 1.6rem;
 }
 
+.lovecalculator label {
+  margin-right: 5px;
+}
+
 .names {
-  margin: 5% 0;
+  margin:3% 0;
   text-align: center;
 }
 
@@ -341,18 +343,14 @@ input {
   padding-right: 3%;
 }
 
-label {
-  color: black;
-}
-
-form {
+.lovecalculator {
   font-family: 'Hubballi', cursive;
   color: #8f8f8f;
   font-size: 1.6rem;
   text-align: center;
 }
 
-form h3 {
+.lovecalculator h3 {
   color: #a40d84;
   margin: 0 0 5% 0;
   font-size: 2.4rem;
@@ -378,15 +376,95 @@ form h3 {
   padding-top: 6%;
 }
 
+#contactForm h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 5rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+
+.lead {
+  color: white;
+  font-size: 1.6rem;
+}
+
+#contactForm {
+  color: #8f8f8f;
+  font-size: 1.3rem;
+  text-align: left;
+}
+
+#contactForm input, select, textarea {
+  box-shadow: 1px 1px 6px lightgrey;
+}
+
+#contactForm .row {
+  margin: 1%;
+}
+
+.wrap {
+  padding: 3% 15%;
+  background-image: url(../images/contactbackground.png);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width:100%;
+}
+
+#contactForm .header {
+  margin-bottom: 5%;
+  text-align: center;
+  color: white;
+}
+
+#contactForm .btn {
+  margin: 3%;
+  background-color: #d63bb0;
+  border: none;
+  width: 20%;
+  text-align: center;
+  font-size: 1.3rem;
+  color: white;
+}
+
+#contactForm .btn:hover {
+    background-color: #d63bb0;
+  opacity: 0.7;
+}
+
+#contactForm .form-check-input:checked {
+  background-color: #d63bb0;
+    border-color: #d63bb0;
+}
+
+#alerts {
+  padding: 0 15%;
+  display: none;
+}
+
+.alert {
+  margin: 10px 0 10px 0;
+}
+
+.robotcheck, .sendrequest {
+  text-align: center;
+}
+
+.robotcheck {
+  margin-top: 5%!important;
+}
+
 #game {
-  background: #efefef;
-  padding: 7% 15%;
+  padding: 3% 15%;
   text-align: center;
 }
 
 .link {
   text-align: center;
-  padding: 7%;
+    font-size: 4.5rem;
+    padding-top: 3%;
+    padding-bottom: 5%;
 }
 
 #footer {
@@ -404,13 +482,10 @@ form h3 {
   margin: 20px 7px;
 }
 
-.link {
-  font-size: 5rem;
-}
-
 .pixelcat {
-  height: 200px;
-  width: 200px;
+  height: 130px;
+  width: 130px;
+  margin: 2%;
 }
 
 /* MEDIA QUERIES */
@@ -425,8 +500,8 @@ form h3 {
   }
 
   .pixelcat {
-    height: 160px;
-    width: 160px;
+    height: 140px;
+    width: 140px;
   }
 }
 
@@ -459,6 +534,10 @@ form h3 {
     margin-bottom: 2rem;
   }
 
+  #contactForm h1 {
+      font-size: 3.5rem;
+  }
+
   h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
@@ -470,12 +549,13 @@ form h3 {
 
   h4 {
     font-size: 1.5rem;
-    margin: 5% 0;
+    margin: 4% 0;
   }
 
-  p {
+  p, .lead {
     font-size: 1.2rem;
   }
+
 
   em {
     font-size: 1rem;
@@ -533,6 +613,15 @@ form h3 {
     font-size: 1.3rem;
     margin-bottom: 5%;
   }
+
+#contactForm .btn {
+  width: 35%;
+}
+
+.robotcheck {
+  font-size: 1rem;
+}
+
 }
 
 @media screen and (max-device-width: 992px) {
@@ -723,6 +812,10 @@ form h3 {
     margin-bottom: 2rem;
   }
 
+  #contactForm h1 {
+      font-size: 2.8rem;
+  }
+
   h2 {
     font-size: 1.4rem;
     margin-bottom: 20px;
@@ -732,9 +825,6 @@ form h3 {
     font-size: 1.7rem;
   }
 
-  p {
-    font-size: 1.2rem;
-  }
 
   em {
     font-size: 0.9rem;
@@ -798,16 +888,16 @@ form h3 {
   height: 60px;
 }
 
-  .card-body h2 {
+  .card-preise h2 {
     margin: 5px 10px 5px;
     font-size: 1.5rem;
   }
 
-  .card-body p {
+  .card-preise p {
     font-size: 1rem;
   }
 
-  .card-body .btn {
+  .card-preise .btn {
     margin: 15px 0 5px;
     width: 60%;
     height: 40px;
@@ -847,11 +937,21 @@ form h3 {
     height: 90px;
     width: 90px;
   }
+
+  #contactForm .btn {
+    width: 60%;
+    font-size: 1rem;
+  }
+
 }
 
 @media screen and (max-device-width: 375px) {
   h1 {
     font-size: 2.5rem;
+  }
+
+  #contactForm h1 {
+      font-size: 2.5rem;
   }
 
   .title-img {
@@ -870,6 +970,20 @@ form h3 {
   .download-button {
     margin-top: 20px;
   }
+
+  .wrap {
+    padding: 3% 10%
+  }
+
+.lovecalcbtn {
+  font-size: 1rem;
+}
+
+  #contactForm .btn {
+    width: 90%;
+    font-size: 0.9rem;
+  }
+
 }
 
 @media screen and (max-device-width: 280px) {
@@ -893,6 +1007,10 @@ form h3 {
     font-size: 2rem;
   }
 
+  #contactForm h1 {
+      font-size: 2rem;
+  }
+
   .download-button {
     font-size: 0.8rem;
   }
@@ -905,4 +1023,5 @@ form h3 {
     height: 50px;
     width: 50px;
   }
+
 }

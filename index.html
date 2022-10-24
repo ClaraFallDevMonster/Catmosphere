@@ -162,7 +162,7 @@
           <div class="card-header">
             <h3>Siamese</h3>
           </div>
-          <div class="card-body">
+          <div class="card-body card-preise">
             <h2>Free</h2>
             <p>5 Matches Per Day</p>
             <p>10 Messages Per Day</p>
@@ -178,7 +178,7 @@
           <div class="card-header">
             <h3>Savannah</h3>
           </div>
-          <div class="card-body">
+          <div class="card-body card-preise">
             <h2>$49 / mo</h2>
             <p>Unlimited Matches</p>
             <p>Unlimited Messages</p>
@@ -194,7 +194,7 @@
           <div class="card-header">
             <h3>Maine Coon</h3>
           </div>
-          <div class="card-body">
+          <div class="card-body card-preise">
             <h2>$99 / mo</h2>
             <p>Priority Listing</p>
             <p>Unlimited Matches</p>
@@ -236,15 +236,19 @@
       </div>
 
       <div class="col-lg-6 input">
-        <form>
+        <form class="lovecalculator">
           <h3>Love-Calculator</h3>
           <div class="row">
             <div class="col-lg-12 names">
-              <label for="YourName">Your cat's name: </label>
+              <label for="YourName"><p>
+                Your cat's name:
+              </p></label>
               <input id="YourName" type="text" name="YourName">
             </div>
             <div class="col-lg-12 names">
-              <label for="OtherName">Other cat's name: </label>
+              <label for="OtherName"><p>
+                Other cat's name:
+              </p></label>
               <input id="OtherName" type="text" name="OtherName">
             </div>
           </div>
@@ -262,6 +266,87 @@
       <p id="text"></p>
     </div>
 
+  </section>
+
+  <!---Kontaktformular--->
+  <div class="wrap">
+    <section class="container" id="contactForm">
+
+      <div class="header">
+        <h1 class="display-4">Contact</h1>
+        <p class="lead">Send us a message</p>
+      </div>
+
+      <form class="contact" method="post" action="kontaktformular.php">
+        <!--Form action (server php self) weglassen, da es Sicherheitslücken enthält (JS-Code kann mit eingebaut und abgesendet werden). Form wird trotzdem an die gleiche URL geschickt, in der sich die form befindet.-->
+        <div class="card">
+          <div class="card-body">
+            <div class="row form-group">
+              <div class="col-lg-2">
+                  Salutation:
+              </div>
+              <div class="col-lg-4">
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="salutation" id="salutationMrs" value="mrs">
+                  <label class="form-check-label" for="salutationMrs">Mrs.</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="salutation" id="salutationMr" value="mr">
+                  <label class="form-check-label" for="salutationMr">Mr.</label>
+                </div>
+              </div>
+            </div>
+            <div class="row form-group">
+              <label class="col-lg-2 col-form-label" for="name">Name:</label>
+              <div class="col">
+                <input class="form-control" type="text" name="name" id="name" placeholder="Name">
+              </div>
+            </div>
+            <div class="row form-group">
+              <label class="col-lg-2 col-form-label" for="subject">Subject:</label>
+              <div class="col">
+                <select id="subject" name="subject" class="form-select form-control">
+                  <option>Please choose</option>
+                  <option value="help">Need general help</option>
+                  <option value="feedback">Feedback</option>
+                  <option value="bug">Discovered errors</option>
+                  <option value="business">Business request</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+            </div>
+            <div class="row form-group">
+              <label class="col-lg-2 col-form-label" for="message">Message:</label>
+              <div class="col">
+                <textarea id="message" class="form-control" rows="3" placeholder="Your message"></textarea>
+              </div>
+            </div>
+            <div class="row form-group robotcheck">
+              <div class="col">
+                <input type="checkbox" name="robot" id="robot" class="form-check-input">
+                <label for="robot" class="form-check-label">I hereby confirm, that I am a robot.</label>
+              </div>
+              </div>
+              <div class="row form-group sendrequest">
+                <div class="col">
+                    <button class="btn btn-primary" name="send" id="send">Send request</button>
+                </div>
+              </div>
+          </div>
+        </div>
+      </form>
+    </section>
+  </div>
+
+  <!---Alerts Kontaktformular--->
+
+  <section class="container" id="alerts">
+    <div class="alert alert-success" role="alert">
+      Request sent
+    </div>
+    <div class="alert alert-danger" role="alert">
+      Error sending request
+    </div>
   </section>
 
   <!-- Simon Game -->
