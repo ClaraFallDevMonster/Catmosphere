@@ -440,6 +440,13 @@ a {
 
 #alerts {
   padding: 0 15%;
+}
+
+.alert-success {
+  display: none;
+}
+
+.alert-danger {
   display: none;
 }
 
